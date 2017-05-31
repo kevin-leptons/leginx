@@ -1,0 +1,7 @@
+pytest==3.0.5
+pep8==1.7.0
+flake8==3.2.1
+Sphinx==1.5
+sphinx-rtd-theme==0.1.9
+click==6.6
+fake-factory==0.7.2
