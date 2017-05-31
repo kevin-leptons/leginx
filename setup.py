@@ -28,7 +28,7 @@ setup(
     url='https://github.com/kevin-leptons/leginx',
     download_url='https://github.com/kevin-leptons/leginx',
     install_requires=[
-        'clink==0.19.0', 'click==6.6', 'waitress==1.0.0'
+        'clink==0.21.0', 'click==6.6', 'waitress==1.0.0'
     ],
     packages=find_packages(exclude=['tool', 'test']),
     entry_points={
