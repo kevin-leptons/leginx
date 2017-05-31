@@ -79,8 +79,8 @@ class Server():
         '''
 
         app_conf = AppConf(
-            'leginx', 'MIT License', Version(0, 1, 0), 
-            'leginx org', 'Ha Noi, Viet Nam'
+            'Leginx', 'MIT License', Version(0, 1, 0), 
+            'Leginx org', 'Ha Noi, Viet Nam'
         )
         mongo_conf = MongoConf(self._conf.dburl, self._conf.dbname)
         auth_conf = AuthConf(
