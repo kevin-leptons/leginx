@@ -6,6 +6,7 @@ venv/
 leginx.egg-info/
 run/
 __pycache__/
+.openshift/
 .cache/
 .eggs/
 *.swp
