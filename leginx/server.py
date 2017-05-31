@@ -63,10 +63,10 @@ class Server():
         '''
 
         waitress.serve(
-            self._new_app(), host=self._conf.addr, port=self._conf.port
+            self.new_app(), host=self._conf.addr, port=self._conf.port
         )
 
-    def _new_app(self):
+    def new_app(self):
         '''
         Create clink application
         '''
