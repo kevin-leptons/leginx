@@ -52,6 +52,8 @@ class Server():
         :param ServerConf conf:
         '''
 
+        self._wsgi_app = None
+
         if conf is None:
             self._conf = self._env_conf()
         else:
@@ -63,10 +65,15 @@ class Server():
         '''
 
         waitress.serve(
-            self.new_app(), host=self._conf.addr, port=self._conf.port
+            self.wsgi_app(), host=self._conf.addr, port=self._conf.port
         )
 
-    def new_app(self):
+    def wsgi_app(self):
+        if self._wsgi_app is None:
+            self._wsgi_app = self._mk_app()
+        return self._wsgi_app
+
+    def _mk_app(self):
         '''
         Create clink application
         '''
