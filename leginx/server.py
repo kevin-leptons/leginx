@@ -87,7 +87,6 @@ class Server():
         app.add_ctls(clink_ctl)
         app.add_ctls(leginx_ctl)
         app.load()
-        print('whattttttttttttttttttttttttttttttttttttt')
 
         return app
 
