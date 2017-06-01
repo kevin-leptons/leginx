@@ -32,3 +32,8 @@ Viet Nam", "license": "MIT License", "version": "0.1.0"}
 # stop server
 kill %1
 ```
+
+# REFERENCES
+
+- [Leginx Homepage](https://kevin-leptons.github.io/leginx)
+- [Leginx Document](http://leginx.readthedocs.io/en/latest)

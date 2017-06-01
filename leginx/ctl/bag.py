@@ -6,4 +6,4 @@ from clink import stamp, mapper, Controller
 class BagCtl(Controller):
     @mapper.get('item')
     def get_items(self, req, res):
-        res.body = [] 
+        res.body = []

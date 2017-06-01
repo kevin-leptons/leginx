@@ -1,5 +1,4 @@
 import click
-import os
 
 from leginx import Server
 

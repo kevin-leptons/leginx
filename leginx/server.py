@@ -4,9 +4,10 @@ from clink import App, AppConf, MongoConf, AuthConf, ctl as clink_ctl
 from clink import Version
 from leginx import ctl as leginx_ctl
 
+
 class ServerConf():
     def __init__(
-        self, dburl, dbname, 
+        self, dburl, dbname,
         root_pwd, root_email, root_email_pwd, root_email_server,
         jwt_key, port=8080, addr='0',
     ):
@@ -79,7 +80,7 @@ class Server():
         '''
 
         app_conf = AppConf(
-            'Leginx', 'MIT License', Version(0, 1, 0), 
+            'Leginx', 'MIT License', Version(0, 1, 0),
             'Leginx org', 'Ha Noi, Viet Nam'
         )
         mongo_conf = MongoConf(self._conf.dburl, self._conf.dbname)
