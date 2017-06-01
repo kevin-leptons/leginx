@@ -4,7 +4,7 @@ HTTP APIs Skeleton for something. Waiting for idea.
 
 # USAGE
 
-Checkout APIs at https://leginx.herokuapp.com/
+Checkout APIs at [https://leginx.herokuapp.com](https://leginx.herokuapp.com)
 
 # DEVELOPMENT
 
