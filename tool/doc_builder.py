@@ -25,7 +25,7 @@ def build_doc(spec, force=False):
     call(cmd)
 
 
-def clean_doc(spec):
+def clear_doc(spec):
     rm(path.join(spec.dest, 'doc'))
 
 

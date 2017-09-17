@@ -6,7 +6,7 @@ set -e
 #
 #   env init
 #   env install
-#   env clean
+#   env clear
 #   env -h, --help
 #
 # DESCRIPTION
@@ -16,7 +16,7 @@ set -e
 # help menu
 HELP="USAGE:
     $(basename $0) init         Create virtual environment
-    $(basename $0) clean        Clean virtual environment
+    $(basename $0) clear        Clear virtual environment
     $(basename $0) install      Install packages in virtual environment
     $(basename $0) -h, --help   Print help menu\n"
 TMP_DIR="tmp"
@@ -70,11 +70,11 @@ cmd_install()
     pip install -e .
 }
 
-# Clean virtual environment files
-cmd_clean()
+# Clear virtual environment files
+cmd_clear()
 {
     if [ "$(which python)" != "/usr/bin/python" ]; then
-        echo "In virtual environment now, do not clean virtualenv"
+        echo "In virtual environment now, do not clear virtualenv"
         exit 1
     fi
 
@@ -91,7 +91,7 @@ cmd_help() {
 case "$1" in
     init) cmd_init; exit 0;;
     install) cmd_install; exit 0;;
-    clean) cmd_clean; exit 0;;
+    clear) cmd_clear; exit 0;;
     -h) cmd_help; exit 0;;
     --h) cmd_help; exit 0;;
     *) cmd_help; exit 1;;
